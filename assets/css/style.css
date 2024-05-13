@@ -1,0 +1,101 @@
+header {
+    grid-area: header;
+    background-color: rgb(230, 126, 195);
+    font-family: math;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(240, 190, 211);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: math;
+    cursor: pointer;
+    height: auto;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(155, 64, 143);
+    height: 100px;
+}
+
+
+.container-grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer ";
+    grid-template-columns: 10em 1fr;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 188vh
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+}
+
+.container-card {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.card {
+    display: flex; /* Convertimos el contenedor en flex */
+    flex-direction: column; /* Apilamos los elementos verticalmente */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    background-color: rgb(237, 225, 247);
+    color: rgb(14, 1, 10);
+    padding: 1rem;
+    border-radius: 34px;
+}
+
+.card img { 
+    width: 99%;
+    height: 68%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    padding: 10px;
+    
+}
+
+footer {
+ grid-area: footer;
+ background-color: rgb(230, 126, 195);
+ display: flex;
+ justify-content: center;
+}
+
+.card button {
+    display: inline-block; 
+    background-color: rgb(241, 190, 235);
+    border: none; 
+    border-radius: 8px; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+  }
