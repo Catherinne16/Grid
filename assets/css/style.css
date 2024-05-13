@@ -1,7 +1,13 @@
+body {
+    margin: 0%;
+}
+
 header {
     grid-area: header;
     background-color: rgb(230, 126, 195);
     font-family: math;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
@@ -64,9 +70,9 @@ main {
     gap: 0.5rem;
 }
 .card {
-    display: flex; /* Convertimos el contenedor en flex */
-    flex-direction: column; /* Apilamos los elementos verticalmente */
-    align-items: center; /* Centramos los elementos horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     background-color: rgb(237, 225, 247);
     color: rgb(14, 1, 10);
     padding: 1rem;
