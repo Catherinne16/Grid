@@ -13,12 +13,12 @@ header {
 nav {
     grid-area: nav;
     background-color: rgb(240, 190, 211);
-    padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
     font-family: math;
     cursor: pointer;
-    height: auto;
 }
 
 main {
